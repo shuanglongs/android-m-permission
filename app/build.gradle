@@ -25,7 +25,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //注解 java库
     implementation project(':annotation')
-    implementation project(':permission-library')
+    //注解处理器 java 库
     annotationProcessor project(':processors')
+    //permission 权限 android module
+    implementation project(':permission-library')
+
 }

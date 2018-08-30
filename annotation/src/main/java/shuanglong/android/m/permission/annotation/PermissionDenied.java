@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.METHOD)
 public @interface PermissionDenied {
-
-    int value() default -1;
+    int requestCode() default -1;
+    String[] permissions();
 }
